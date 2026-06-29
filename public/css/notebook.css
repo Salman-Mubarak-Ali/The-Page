@@ -1,0 +1,90 @@
+.notebook-sheet {
+  max-width: 980px;
+  margin: 18px auto 40px;
+  position: relative;
+  padding-left: 64px;
+  z-index: 3;
+}
+
+.paper {
+  background: var(--paper-bg, #fffef9);
+  border-radius: 12px;
+  padding: 18px 22px 26px;
+  box-shadow: 0 14px 40px rgba(10,20,40,0.06);
+  position: relative;
+  overflow: hidden;
+  min-height: 500px;
+}
+
+.left-margin {
+  position: absolute;
+  left: calc(var(--notebook-left, 92px) - 12px);
+  top: 160px;
+  bottom: 26px;
+  width: 4px;
+  background: var(--margin-red, #e24a3a);
+  border-radius: 2px;
+}
+
+.lines-wrapper {
+  position: relative;
+  margin-top: 8px;
+  padding-left: calc(var(--notebook-left, 92px) + 6px);
+  min-height: 420px;
+}
+
+.lines-container {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0px,
+    transparent calc(var(--line-height, 44px) - 1px),
+    var(--rule-blue, #d7ecff) calc(var(--line-height, 44px) - 1px),
+    var(--rule-blue, #d7ecff) calc(var(--line-height, 44px))
+  );
+  background-size: 100% var(--line-height, 44px);
+  min-height: 360px;
+  padding: 12px 10px;
+  border-radius: 6px;
+}
+
+.title-inline {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.title-inline:focus {
+  outline: none;
+  border-bottom: 1px dashed #ddd;
+}
+
+.page-total-display {
+  margin-top: 20px;
+  padding: 15px 20px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 8px;
+  border: 2px solid #dee2e6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-total-display .label {
+  font-weight: 600;
+  color: #495057;
+  font-size: 1.1rem;
+}
+
+.page-total-display .amount {
+  font-weight: 700;
+  color: #198754;
+  font-size: 1.5rem;
+  font-family: 'Courier New', monospace;
+}
+
+@media (max-width: 991px) {
+  .notebook-sheet { padding-left: 24px; }
+  .left-margin { left: 54px; }
+  .lines-container { min-height: 260px; }
+}

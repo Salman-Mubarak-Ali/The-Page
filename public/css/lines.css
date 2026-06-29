@@ -1,0 +1,33 @@
+.line-row {
+  background: rgba(255,255,255,0.95);
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(10,20,40,0.04);
+  padding: 10px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 10px;
+  border: 1px solid rgba(0,0,0,0.03);
+}
+
+.product-input,
+.qty-input,
+.price-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  padding: 6px;
+}
+
+.product-input { flex: 1; }
+.qty-input { width: 70px; text-align: center; }
+.price-input { width: 110px; text-align: right; }
+
+.clear-line-btn {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  color: #b71c1c;
+  cursor: pointer;
+}

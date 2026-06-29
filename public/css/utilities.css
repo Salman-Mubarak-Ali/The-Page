@@ -1,0 +1,37 @@
+.utility-list-container {
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
+  background: #fff;
+}
+
+#utilShoppingList .list-group-item {
+  border: none;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 12px 16px;
+  transition: background-color 0.2s;
+}
+
+#utilShoppingList .list-group-item:first-child {
+  border-top: 1px solid #f0f0f0;
+}
+
+#utilShoppingList .list-group-item:hover {
+  background-color: #fcfcfc;
+}
+
+#shoppingListView {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#utilItemInput {
+  font-size: 1.1rem;
+  padding: 12px;
+  border-radius: 8px 0 0 8px;
+}
+
+#utilAddItemBtn {
+  width: 60px;
+  font-size: 1.5rem;
+  border-radius: 0 8px 8px 0;
+}

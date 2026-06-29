@@ -1,0 +1,29 @@
+:root {
+  --paper-bg: #fffef9;
+  --margin-red: #e24a3a;
+  --rule-blue: #d7ecff;
+  --notebook-left: 92px;
+  --line-height: 44px;
+  --card-h: 200px;
+}
+
+* { 
+  box-sizing: border-box; 
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans Tamil", system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  background: linear-gradient(135deg, #adb2b9 0%, #fbfbff 100%);
+  min-height: 100vh;
+  color: #222;
+  overflow-x: hidden;
+}
+
+.small { 
+  font-size: .85rem; 
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
